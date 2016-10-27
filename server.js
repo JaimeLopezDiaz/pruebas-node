@@ -7,7 +7,7 @@ mongoose.connect('mongodb://localhost/persona', function(err, res){
 	else console.log("CONECTADO A BD");
 });
 
-require('./services/PersonaService')(app);
+require('./personas/PersonaService')(app);
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
